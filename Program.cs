@@ -76,6 +76,7 @@ namespace Dict_Voting_Review
                 Console.WriteLine($"{kvp.Key} -- {kvp.Value}");
             }
         }
+        //needs fixing
         static void ResetVotes()
         {
             Dictionary<string, int> votesReset = new Dictionary<string, int>();
@@ -83,6 +84,8 @@ namespace Dict_Voting_Review
             {
                 votesReset.Add(kvp.Key, 0);
             }
+
+            votes = votesReset;
         }
     }
 }
